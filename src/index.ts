@@ -1,5 +1,7 @@
-const FS = require("./FS")
+const net = require("./net")
+const file = require("./file")
 
 module.exports = {
-    FS: FS
+    net,
+    file
 };
