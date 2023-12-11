@@ -36,6 +36,7 @@ module.exports = {
     getIPAdress ():string {
         const interfaces = os.networkInterfaces()
         for (let networkCardName in interfaces) {
+            if (networkCardName.includes('vEthernet')) continue
             const networkCard = interfaces[networkCardName]
             for (let i = 0; i < networkCard.length; i++) {
                 const alias = networkCard[i]
