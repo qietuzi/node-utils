@@ -41,7 +41,14 @@ file.listFileList(p);
 const { net } = require("@qietuzi/node-utils");
 
 /* 
-@desc       树形式列出目录下所有目录
+    @desc           判断网络是否虚拟网络
+    @params         
+    @result         boolean
+    */
+isVmNetwork (mac:string):boolean
+
+/* 
+@desc       获取本机IP
 @params     
 @result     string              本机IPV4
 */
